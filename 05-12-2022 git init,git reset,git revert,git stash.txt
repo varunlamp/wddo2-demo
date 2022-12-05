@@ -39,6 +39,64 @@ step 3 :- we need to connect the local git repo to remote (just we are mapping a
 
 synatx :- git remote add <name-url> <url of github repo>
 
+step 4 :- to check the  mapping we need execute a command called
+
+synatx :- git remote -v 
+
+step 5 :- git status :- to check whether files are there or not (files are added or not)
+
+step 6 :- To add all the files into staging area 
+ 
+           git add . 
+
+
+step 7 :- git commit -m "msg"
+
+*) Head is indicating a recent commit 
+
+
+
+
+*) git reset :- 
+
+it is used to undo the task 
+
+1.we can remove the files from staging area
+
+synatx :- git reset <file-name>
+
+sceario :- After adding all the files into staging area i dont want to add one file to staging area
+
+y because the work is not completed ..
+==================================================
+
+2. we can remove the commits 
+
+sceario :- we are working any application but some part of time i thought
+           i need to add some more features into the commit in that time i want to remove the commit 
+
+git reset head~1 :- it will remove the file from commit and staggin area as well
+
+1.git reset --soft head~1  :- just it will remove the commit and sends the file back to staging area 
+
+2.git reset --hard head~2  :- it will delete the file permantely from the git (distructive command) 
+
+====================================================================================================
+
+drawback :-
+
+we are having a drawback in git reset 
+
+1001
+1002
+1003
+1004
+1005
+
+In git reset we need to remove the number of commits , it will not support to delete the specific commit 
+
+
+
 
 
 
