@@ -1,0 +1,120 @@
+Linux part 
+
+Linux
+Shell scripting
+Git,Github
+maven,Gradle
+jenkins
+Agile
+Jira
+Linux :----
+------------------
+
+Operating system :
+----------------------
+Operating system is an interface between user and hardware 
+
+It will handle file management, user management,Networking, Disk paratistion 
+
+Types of operating system :
+-----------------------------
+1.Windows
+2.linux
+3.Ubuntu
+4.fedora
+5.redhat
+6.macos
+7.black berry
+8.kali linux
+9.android
+
+
+Histroy :
+--------------------
+Linus torvlads developed kernal in 1991 
+
+Linux operating system is a combination of kernal+GNU software
+
+Linux os is written in C language  
+Good listener is a good speaker 
+
+Linux basic commands :
+------------------------------
+1.mkdir :- Make directroy it is used to create a directory
+
+directory=folders 
+
+syntax :- mkdir <dir-name>
+
+example :- mkdir india
+
+2.ls :- list it will give a list of files and directorys which are located inside the current
+        working directory
+
+syntax :- ls
+
+3.cd :- change directroy is used to change the directory
+
+syntax :- cd <dirctory name>
+
+cd .. :- it is used to go back to the previous directroy
+
+example :- cd india 
+
+          
+
+4.pwd :- It is used to print the present working directory
+
+syntax :- pwd 
+
+5.touch :- we can create the files 
+
+syntax :- touch <file-name>
+
+example :- touch bsf
+
+6.Editors :- By using editors we can modify/insert the data in files....
+
+vi,nano,vim
+
+synatx :- nano <file-name>
+
+ctrl+s :- for save the data
+& ctrl+x :- Exit
+
+7.cat :- by using cat command we can see the data which is present inside the file.
+
+synatx :- cat <file-name>
+
+8.cat > <file-name> :- it will override the old data (delete the old data and store the new data)
+
+synatx :- cat > file-name
+
+9.cat >> <file-name> :- it is used to store the old data along with the newdata(append)
+
+syntax :- cat >> file-name>
+
+
+Assignment :
+--------------------
+1.What is operating system
+2.types of os
+3.Linux distribution
+4.explain about linux
+5.basic commands 
+
+
+Creating Github account :
+---------------------------------
+step 1 :- open the browser and enter githu.com
+
+step 2 :- click on signup & add the mail-id,password, user-name
+
+step 3 :- click on next
+
+
+
+
+
+
+

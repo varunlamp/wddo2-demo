@@ -1,0 +1,336 @@
+Agenda :-
+---------
+1.looping statements
+2.conditional statements
+3.case-esac
+4.array
+5.printing the data in diffrent forms
+
+i) multi line print
+echo "hello \
+             everyone \
+                    welcome to skillrary \ "
+----------------------------------------------------------------
+
+ii)Give the space between the data
+
+echo -e "welcome \t to \t skillrary"
+
+-e :- is special operator to do the specific task based on the user input (modify the data)
+
+\t :- give the space between the data
+
+-------------------------------------------------------------------------
+
+iii)To Print the data in vertical formate
+
+echo -e "welcome \v to \v qspiders"
+
+iv)To print the data line by line :
+-----------------------------------------
+
+echo -e "Hello \n everyone \n this is \n varun "
+2.Looping statements :-
+--------------------------
+
+echo "hello world"
+
+I want to print the same data for 100 times 
+
+-------------------------------------------------------
+scenrio :-
+As Test engineer we need to do a performance testing 
+
+login :- at a time if recive 10k request whether it will take or not 
+
+is it possible by single test eng to test the login for 10k times 
+
+looping statemts 100000
+
+
+Looping statemts we are having 3 types :
+----------------------------------------
+1.for loop
+2.while loop
+3.until loop 
+
+i) For loop:- 
+--------------------
+for loop will work for specified numbers 
+
+syntax :
+----------------
+ for in -----
+
+do 
+\
+\
+\ 
+done 
+
+example :-
+---------
+for var in 1 2 3 4 5 
+
+do 
+echo "hello world"
+done
+
+
+for var in 1 
+
+hello world 
+
+var=2
+
+hello world
+
+var=3
+
+hello world 
+
+1.write a shell script to list the files???\
+
+for i in *
+do 
+echo $i
+done 
+
+2.write a shell script to Display the only .txt files????
+
+for i in $(ls *.txt)
+do
+echo  $i
+done   
+
+
+
+ii) while Loop :
+-------------------------------
+While loop will work based the range given by the user 
+
+1.write a shell script to run the loop for 100 times ?
+
+init=1
+while [[ ${init} -le 100 ]] 
+do
+echo $init
+((init++))
+done
+
+init=3 
+
+3 <= 100 (true)
+
+1
+2
+
+2+1=3
+
+
+2 <= 100
+
+100 <= 100
+
+
+2.write a shell script to print the tables :-
+--------------------------------------------
+echo "enter the number"
+read table
+
+init=1
+
+while [[ $init -le 10 ]]
+do
+echo $((init * table))
+((init++))
+done
+
+
+explanation :
+-------------------
+echo "enter the number"  #it will print as it is 
+
+read table  #user needs to give the input(he need to give  value for table, Table is the variable name)
+
+init=1 #we are storing 1 in init
+
+while [[ $init -le 10 ]] #while condition we are using , condition is to check whether init number is less then 
+                          equal to 10 (we are giving the range) 
+
+echo  $((init * table))  # it will execute the task it will multiply the init*number
+
+1*2=2
+2*2=4
+
+((init++)) # we are incrementing the numnbe
+
+
+3.until :
+--------------
+until the condition get satisfy till it will work when condition get satisfy it will terminate the loop 
+
+10=10
+
+1=10
+2=10
+3=10
+
+
+
+10=10 (here the condition will get terminates )
+
+
+i=0
+until [[ $i -eq 4 ]]
+do
+echo $i
+((i++) 
+done
+
+execition :-
+-------------------
+i=0
+
+0
+
+i++ (i+1=0+1=1   i=1
+
+1
+
+1+1=2
+
+i=2
+
+2
+
+2+1=3
+
+i=3
+
+3
+
+3+1=4
+
+4=4 (condition get satisfy then while loop  will get terminate
+
+
+Conditional statements 
+--------------------------------
+It will work based on the condtiton if cond get satisfy then only i will print 
+
+Types :
+--------
+1.if statement
+2.If-else statement
+3.else-if statement
+
+1.if statement :
+-----------------
+if cond get satisfy then only it will print 
+
+
+read -p "enter a number" number  #read will take the input from the user (-p will print the data)
+
+if [ $number -lt 100 ]
+
+then 
+echo "hello world"
+fi 
+
+2.if-else statement :
+---------------------------
+If the cond is true it will print if block or else it will print else block 
+
+read -p "enter the number" number 
+
+if [ $number -lt 100 ]
+
+then 
+
+echo "cond is true"
+
+else 
+
+echo "the condition is false"
+
+fi 
+
+1.write a shell script to check whether cond is even or odd 
+----------------------------------------------------------------
+
+read -p "enter a number " number
+
+if [ `expr $number % 2` == 1 ]
+
+then 
+echo "odd"
+else
+
+echo "even"
+fi
+
+2.To check even or not
+---------------------------
+
+read -p "enter a number " number
+
+if [ `expr $number % 2` == 0 ]
+
+then 
+echo "even"
+else
+
+echo "odd"
+fi
+
+
+2)2(
+  2
+------
+  0 ---even 
+
+2)3(
+  2
+--------
+  1 ---odd
+
+3.else-if :
+--------------------
+
+echo "enter a number"
+read a 
+
+if [ `expr $a % 2` == 0 ]
+
+then 
+
+echo $a is even 
+
+elif [ `expr $a % 2` == 1 ]
+
+then 
+
+echo $a is odd
+
+fi
+
+Assignemt :
+---------------
+1.what is shell
+2.what is the use of shell scripting
+3.create a 2-2 examples on looping statements
+4.create a 2-2 examples on conditional statements 
+
+
+
+
+
+
+
+
+
+
+
+
+

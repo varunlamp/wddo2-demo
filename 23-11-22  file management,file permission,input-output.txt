@@ -1,0 +1,195 @@
+Agenda :- 23-11-2022
+
+1.file management
+2.File permissions
+3.Input and output redirection
+4.file compression forms
+5.networking commands
+
+Installing moba-xterm :
+---------------------------
+step 1 :- open the browser
+step 2 :- enter Mobaxterm download 
+step 3 :- choose mobaxterm and click on download free edition & choose installer edition
+step 4 :- download 
+
+
+1.File Management :
+---------------------------
+In our linux operating system/Linux distribution we will be having default directory
+Strcutre as a user we need to understand how each and every directory works (what all
+are the files it contains)...
+
+
+1./bin :-The /bin directory contains user binaries,executable files, linux commands 
+
+2./etc :-In this location configuration files will be present..
+
+3./home :- In this location our os will create the dedicated directory for user.
+
+4./tmp :- This directory is completely dedicated to store the temporary files.
+
+5./opt :- It is dedicated to install the 3rd party applications
+
+6./usr :- 
+
+7./var :- 
+
+File permissions :
+------------------------------
+1.owner permissions :- 
+2.Group permissions
+3.other permissions 
+
+Permissions :- rwx 
+
+chmod 777 <file-name>
+
+r:- read 
+w:- write
+x :- Excute 
+
+7 :- 4+2+1
+
+read,write,execute :
+-------------------------
+owner, group,others
+
+7:- r(4) + w(2) + x(1)
+
+chmod 777 <file-name>
+
+4:- read
+2:- write
+1:- execute
+
+777:
+==============================
+1st 7(seven) is for owner :- r+w+x
+
+2nd 7(seven) is for groups P:-r+w+x
+
+3rd 7(seven) is for others := r+w+x
+
+
+For yashwant file :- owner - read& execute :- 5
+                     group - write
+                     others - execute 
+
+example :- we are created one file - yashwanth
+
+yashwanth :- rw(owner),r(group),r(others)
+
+modify some permissions :- owner(r-x),group(2),x(others)
+
+-r-x-w---x
+
+owner :- r-x
+
+group :- -w-
+
+others :- --x  ---  r-x
+
+
+owner :- rwx
+group :- rwx
+others :- rwx (r-4, w-2, x-1)
+
+example :- create one file
+
+owner :- execute 
+group :- write& read
+others :- read
+
+answer :- chmod 164 <file-name>
+
+By using alphabets :
+---------------------------
+
+=,+,-
+
+= :- Adding the permissions
++ :- add only the particular permissions
+- :- remove the permissions
+
+ 
+1.craeated one file Bharath 
+
+chmod u=rwx,g+r,o+x <bharath>
+
+-rwxr--r-x 
+
+rwx :_ owner
+
+r :- group
+
+x :- others
+
+Networking Commands :
+-------------------------
+
+sceanrio :- your developed one application in ur own server --Vpc
+
+1.ping(packet internet gropher) :- by using this command 
+
+syntax :- ping <app-name>
+ 
+2.route
+
+3.ifconfig
+
+4.nslookup :- 
+
+5.last
+
+*) File compression forms :
+-----------------------------------
+scearios :
+---------------
+
+features :- singup,login,search,cart
+
+1.tar(tape archive) :- 
+
+create Compressed formate:- tar cvf <file.tar> <files....>
+
+tar :- tape archaive
+c:- Create
+v:- verbosely
+f :- file
+
+Extracting the compressed files :- 
+
+synax :- tar xvf <file.tar>
+
+tar :- tape archaive
+x:- extract
+v:- verbosely
+f :- file
+
+2.zip :- 
+
+it will store the files in compressed formate without lossing the data
+
+synatx to create :-
+
+zip <file.zip> nagaraj madhu anju siva aisiri
+
+extracting :-=
+
+syntax :- unzip <file.zip>
+
+3.gzip :- gnu zip 
+
+To create gzip :-
+
+syntax :- gzip <file-names>
+
+Extracting :-
+
+gzip -d <file-name>
+
+
+
+
+

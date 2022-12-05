@@ -1,0 +1,260 @@
+Agenda :
+---------------
+1.Array
+2.case-esac
+3.functions
+4.passing arguments
+5.File reading
+
+1.Array :
+-------------------
+An array is a collection of items of some data type stored at contiguous memory location...
+
+arr=(1 2 3 4 5 6)
+
+#!/bin/bash
+
+arr=(i love my india)
+
+echo ${arr[@]:0}
+echo ${arr[@]:1}
+
+
+i love my india
+
+0  1   2    3
+
+if we call 0 :- it will print the data from 0th location
+
+if we call 1 :- it will orint the data from 1st location
+
+case-esac :(switch)
+------------------
+based on the option it will perform the task
+
+mcq questions 
+
+a.
+b.
+c.
+d.
+
+Example :-
+--------------------
+echo "enter a fruit name"
+
+read fruit
+
+case $fruit in
+
+manago) 
+
+echo "this a mango fruit"
+;;
+
+apple)
+
+echo "this is a apple"
+;;
+
+*) 
+echo "none of these"
+;;
+
+esac 
+
+
+Calcultor script :
+----------------------
+read -p "enter a operation " opr 
+
+case $opr in
+
++) 
+read -p "add the value for a" a
+ 
+read -p "add the value for b" b
+
+echo `expr $a + $b`
+;;
+
+-) 
+read -p "add the value of x " x
+
+read -p "add the value of y " y
+
+echo the sum of x&y is `expr $x - $y`
+
+;;
+
+\*)
+read -p "add the value of c " c
+
+read -p "add the value of d " d
+
+echo the mul of c and d is `expr $c \* $d`
+
+;;
+
+/)
+
+read -p "add the value of e " e
+
+read -p "add the value of f " f
+
+echo the division of e and f is `expr $e / $f`
+
+;;
+
+*)
+
+echo "the operation is not exist"
+
+;;
+
+
+esac 
+
+Functions :
+-----------------
+Function is a group of statements it will get execute when ever it is called or invoked 
+
+in case statement we can perform only one task at a one time 
+
+but in functions we can do multiple task at a single time 
+
+facebook application :
+--------------------------
+in this we are having multiple features 25 
+
+if i write a source a code in a single code if i execute that code , after execution i am getting error 
+
+It will become a dificult job 
+
+Functions :
+-------------------
+when we are writing the source code at that time we will devide the code(functions)
+
+sum()
+
+{
+read -p "add the value of a " a
+
+read -p "add the value of b " b
+
+x=`expr $a + $b`
+
+echo $x
+}
+
+sub()
+
+{
+read -p "add the value of c " c
+
+read -p "add the value of d " d
+
+x=`expr $c - $d`
+
+echo $x
+}
+
+
+sum 
+ 
+*) passing the arguments 
+
+sum()
+{
+x=`expr $1 + $2`
+
+echo $x
+
+}
+
+sum 2 3
+--------------------------
+example 2 :-
+
+name()
+{
+echo "hello $1 $2 $3 "
+}
+
+name madhu aisiri anju
+
+
+Local and global variables :
+--------------------------------
+
+manager given the task to perform 
+
+install jenkins
+
+configure
+
+deploy
+
+------------------------------
+india :- global ---president (we are having only one president)
+
+karnataka :- local ---cm (29 cms we are having in our india)
+
+for each and every state we are having cm
+
+then president of india is going rule our state 
+----------------------------------------------------------
+pkg=nginx
+
+install()
+{
+echo "installing $pkg"
+
+echo "${FUNCNAME}"
+}
+
+config()
+{
+pkg="tomcat"
+echo "config $pkg"
+}
+
+install
+config
+
+--------------------------------------------------------------------------------------
+File Reading Functionality :
+-----------------------------------
+
+read -p "enter the file name : " file
+while read line
+
+do
+
+echo $file
+done < $file
+-----------------------------------------------------
+
+Conuting the chacters,words and lines in the file : 
+
+wc :- is a linux command which is used to count the number of words present inside the file
+---------------------------------------------------
+echo enter the filename
+
+read file
+
+c=`cat $file | wc -c`  #---count the characters
+w=`cat $file | wc -w`   #---count the words
+l=`grep -c "." $file    #-count the lines 
+
+echo "number of characters $c"
+echo "number of words $w"
+echo "number of lines $l"
+
+
+
+
+
+
+
+

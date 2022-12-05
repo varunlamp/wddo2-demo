@@ -1,0 +1,148 @@
+1.write a script to find the largest of 3 numbers
+----------------------------------------------
+
+read -p "enter the first number " num1 
+read -p "enter the second number " num2
+ read -p "enter the third number " num3
+ if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ]
+ then 
+echo "$num1 is the largest" 
+elif [ $num2 -gt $num1 ] && [ $num2 -gt $num3 ] then 
+echo "$num2 is the largest" 
+else 
+echo "$num3 is the largest"
+ fi
+=============================================================
+
+2.write a script to find the smallest of 3 numbers
+
+read -p "enter the first number " num1 
+read -p "enter the second number " num2
+ read -p "enter the third number " num3
+ if [ $num1 -lt $num2 ] && [ $num1 -lt $num3 ]
+ then 
+echo "$num1 is the largest" 
+elif [ $num2 -lt $num1 ] && [ $num2 -lt $num3 ] then 
+echo "$num2 is the largest" 
+else 
+echo "$num3 is the largest"
+ fi
+Git :-
+------------------------------
+Distributed version control system
+
+
+1.what is version control system?
+
+->this a tool  which is used to mainatain & store  the versions  of our project 
+
+when we start project :- 1st day :- 20
+
+2nd day :- 50 lines 
+
+3rd day :- 100 lines 
+
+
+example :- 
+
+whatsapp :- 
+
+chats --1st version
+
+chats,calls ---2nd version
+
+chats,calls,status ----3rd version
+
+chats,calls,status,commuinity --4th version --roll back to the older version 
+
+
+version control system (vcs) is of 3 types :
+----------------------------------------------
+1.local version control system
+2.centralised version control system
+3.Distrubuted version control system
+
+
+1.local version control system
+
+To overcome the drawbacks of local version control system
+
+developers developed centralized version control system 
+
+Repository is devided into 4 parts :
+---------------------------------------------
+1.working directory
+
+write a source 
+
+git add <file-name> we are going transfer the data from working dir to staging area 
+
+2.staging area
+
+source --- to Review the source code  
+
+transfer the data from staging area to local repo
+
+
+git commit -m "written a source code "
+ 
+3.local repo (.git)
+
+the data will be transferd into local repo 
+
+
+git push origin <branch-name>
+
+4.remote repo 
+
+The data will be transferred to github repo (remote repo)
+
+
+Creating repo :
+-----------------------
+step 1 :- open github.com
+
+step 2 :- click on addition drop down and choose new repo 
+
+step 3 :- enter a name for repository
+
+step 4 :- choose a public (defualt)
+
+step 5 :- click on create repo 
+
+
+*) working with git repo :
+------------------------------------
+step 1 :- copy the repo url
+
+step 2 :- open gitbash and execute the command 
+
+git clone <repo-url> :- it is used to clone(download) the repo to local system 
+
+step 3 :- 
+
+.git is a local repo of git 
+
+Git commands :
+----------------------
+1.touch <file-name> :- it is used to create a file (it is not git command)
+
+2.git status :- Check the status of the branch 
+
+3.git add <file-name > :- it is used to add the files from working directory to staging area.
+
+4.git config --global user.name "user-name" :- to configure user name 
+
+5.git config --global user.email "email-id" :- to configure user name 
+
+6.git commit -m "msg" :- To add the file to local repo(save the data) 
+
+7.git push origin <branch-name> :- it is used to push the local changes to remote 
+
+
+
+
+
+
+
+

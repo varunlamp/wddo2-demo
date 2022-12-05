@@ -1,0 +1,63 @@
+Comminicating with github repo :-
+
+1.created one repo :- 
+
+2.git clone <url> :- we are copying the remote repo to local 
+
+3.will create one file then we will add that file to staging area, .git repo by executing the command 
+called 
+git commit -m "msg"
+
+4.git push origin <branch-name>
+
+sceanrio :-
+----------------
+already i have written a source code in my local system 
+
+now i want to add the that source code into github repo... 
+
+Directory called 
+
+facebook source code :- 
+
+I will convert the directory  into git repo 
+
+1.we need to enter into the directory 
+Commuincating with github by using git init (adding the local files to github):
+------------------------------------------------
+step 1 :- we need to enter into the directory where exactly out source code preset
+
+setp 2 :- we need execute a command called 
+
+syntax :- git init :- convert execisting directory into git repo.
+
+          or 
+
+         git init <repo-name> :- to create a new repo in local
+
+step 3 :- we need to connect the local git repo to remote (just we are mapping a local repo to remote repo)
+
+synatx :- git remote add <name-url> <url of github repo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

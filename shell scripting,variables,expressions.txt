@@ -1,0 +1,197 @@
+nagaraj :-
+--------------
+1.Explain the use of sed command 
+
+aisiri:-
+------------------------
+1.what is the use of head and tail command
+
+siva :
+--------------------
+1.what is the use of crontab
+
+dinesh:-
+-------------------------
+1.what is the use of disk utility commands
+
+anju :
+--------------
+1.what is the use of networking commands 
+
+==============================================================
+Shell scripting :
+----------------------
+
+
+
+
+Manager given task :-
+------------------------
+1.you need to install the nagios in the linux server
+
+
+How to create a shell script :
+-------------------------------------
+
+1.step 1 :- create oen file with .sh extetion
+
+2.step 2 :- we need to add #!/bin/bash
+
+3.step 3 :- list of commands  
+
+4.step 4 :- execute by using
+
+synatx :- sh <file.sh>
+
+
+
+
+
+variables :
+--------------------------
+Variable is a named memeory allcation which is used to store the data & it can be changed n number of 
+times during the execution.. 
+
+a=10
+
+we are storing the value of 10 in a 
+
+now the value of a becomes 10
+
+note:-
+--------------
+1.variable names cannot be reserved words..
+2.variable name cannot have space between them
+
+wdd02:- 
+
+wdd 02  
+
+3.the variable name cannot have special characters 
+
+Types of variable :
+--------------------
+1.user defined 
+2.environment
+3.system defined 
+
+
+1.user defined variables :
+---------------------------------
+if we are doing the addition task we need to have 2 values 
+
+a=14
+b=10
+
+declare
+
+intialization
+
+utilization
+example :-
+-------------------------
+
+a=14       #user is specifying the value of a & b
+b=2
+
+echo the value of a is $a + $b  #we are calling the varibles by using $(it is used to call the variable)
+
+sum=$(($a + $b)) #(()) it is used to perform the specific task
+
+echo $sum  #the output of addition is stored in $sum 
+
+===============================
+Expressions :
+===============================
+
+1.Arithemetic operators :-
+
++,-,*,/,%,=,==,!=
+
+2.Logical operator :
+-----------------------
+
+-eq :- equality condition
+-ne :- not equal
+-gt :- greater than
+-ge :- greater than/equal to
+-lt :- less then 
+-le :- less then or equl to
+
+
+Arithmetic :
+--------------
+
+var1=2
+var2=3
+
+sum=`expr $var1 + $var2`
+
+echo $sum
+
+for string operations :
+------------------------
+
+x=skillrary     #user stored the value of skillrary in x
+
+len=`expr length $x` 
+
+echo $len
+
+System defined variables :
+-------------------------
+1.echo $PWD
+2.echo $HOME
+3.echo $HOSTNAME
+4.echo $OSTYPE
+
+Environmantal variables :
+---------------------------
+1.readonly
+
+a=10    #the value of 10 is stored in a
+
+echo $a #printing the value of a
+
+readonly a  #converting variable into readonly
+
+a=5   #is going to modify the value of a
+
+echo the value of a is $a  #is going to print the value 
+
+
+2.unset :
+---------------
+x=4
+
+unset x
+
+echo $x
+
+
+
+
+commnads ----shell ------kernal
+
+
+Variable is named memeory allocation which is used to store some data and it can be changed n number of times during the execution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

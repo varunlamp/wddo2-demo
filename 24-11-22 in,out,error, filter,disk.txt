@@ -1,0 +1,204 @@
+Agenda : 24-11-22
+---------------
+1.input,output & error redirection
+2.disk utility
+3.filter commands
+4.cron jobs
+
+1.Input ,output & error redirection.
+
+i.Standard Input(stdin) :-
+
+2.standard output(stdout) :- redirecting the output to other files. 
+
+We will be writhing the code for deploying the application
+
+1.install tomcat server
+
+echo "tomcat is installed"
+
+2.configure tomcat
+
+echo "configuartion is ready"
+
+3.they we need to deploy the software into tomcat server
+
+echo "application is deployed"
+
+syntax :- command >> <file-name>
+================================================================
+
+3.Error redirection :- 
+
+synatx :- <cmd> 2> <file-name>
+
+example :- la 2> <file-name>
+
+           la 2>> <file-name>
+
+============================================================================
+
+Disk utility :
+--------------------------
+
+disk utility commands is used to monitor and manage the disk partitions.
+
+1.fdisk(for fixed disk) -l
+
+2.df :- by using this command we will get the disk usage information
+
+synatx :- df or df -hT
+
+3.parted -l :- By using this we will get the partotions related information, we can create or we can reorganize the
+partions..
+
+synatx :- parted -l 
+
+4.lsblk :-
+============================================================================
+
+Filter commands :
+----------------------
+
+1.head :- Head command will  print  starting lines 
+
+-n :- to specify the number of lines
+
+-c :- to specify the character
+
+syntax :- head <file-name> :- by default 10 lines 
+===============================================================
+
+2.tail :- tail command is used to print the data from end (from tail) but by defulat it will print 10 lines
+
+-n :- to specify the number of lines
+
+-c :- to specify the character
+ 
+syntax :- tail <file-name>
+
+======================================================================
+3.pipeline :- 
+------------------
+
+example :- head <file> | tail -4
+
+4.sort :- it is used to print the data in ascending or desending order based on assci values
+
+synatx :- sort <file>
+
+for des :- sort -r <file-name>
+
+for numerics :- sort -n <file-name>
+=====================================================
+
+4.uniq :- by using this command we can avoid/restirt the duplicate data and we can able display the uniqe data
+
+
+-c :- to get the number of occurance
+
+-d :- display only duplicate content 
+
+====================================================================
+
+5.find :- to find data or we can find the files whether the files are exist or not
+
+6.sleep :- it is used to sleep the terminal for the specfied timing.
+
+7.grep :- global regular expression print 
+
+synatx :- grep <word> <file>
+
+8.tr :- Translate 
+
+synatx :- tr <old data> <new-data>
+===================================================
+
+9.sed :- stream editor 
+
+syntax :- 1.changing all :-
+
+sed 's/old-data/new-data/' <file-name>
+
+example :- sed 's/s/m/' <file-name>
+
+2.to print the replaced data
+
+example :- sed 's/s/m/p' <file-name>
+
+3.Replacing the specific lines :-
+
+example :- sed '2s/old-data/new-data/' <file-name>
+
+synatx :- sed '<nth line>s/old-data/new-data/p' <file-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

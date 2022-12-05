@@ -1,0 +1,196 @@
+Agenda -22-11-22:
+------------------
+1.Basic commands
+2.user management
+3.group management
+4.file permissions
+
+1.Copy :- copy command is used copy the data from one file to another file or we can copy the files from one directroy to another dir
+
+syntax :- cp <source dir> <destination-dir>
+
+I want to copy the directroy 
+
+*) to copy the non-empty directory :=-
+
+cp -r <source-dir> <dest-dir>
+
+2.move :- To move the data from one file to another or move the data from one dir to another dir
+
+syntax :- mv <source-dir> <dest-dir>
+
+3.Change the directory name or file :-
+
+mv command we can change the file or directroy name
+
+syntax :- mv <old-dir> <new-dir>
+
+4.Delete :- If i want to delete the files by using *rm* command we can delete the files or directroy 
+
+synatx :- rm <file-name> or <dir-name>
+
+*) If you want to delete forcefully :-
+
+synatx :- rm -f <file-name> or <dir-name>
+
+synatx :- rm -r <file-name>
+
+5.to delete the directory we need to use :
+
+synatx :- rmdir <dir-name>
+
+To delete the non empty directroy we are using 
+
+rm -rf <dir-name>
+
+rm:- remove
+-r :- recursively
+f :- forcefully
+
+.txt or .sh ---
+
+file1.txt, file2.txt file3.txt
+
+rm *.txt :- to delete the all .txt extension files
+
+6.Print the data :- echo it is used to print the data
+
+Example :- echo "hello world"
+
+           printf "hello world"
+
+7.cal :- calender by using this command we can display the calender 
+
+syntax :- cal
+          cal 2021
+          cal feb 2001
+
+8.diaply the current month,time,date,min
+
+synatx :- date
+=======================================================================================
+
+uname commands :- to know about kernal name along with the system information like version, os, machine,kernal release
+
+1.uname :- It will print the kernal name 
+
+syntax :- uname 
+
+2.uname -r :- It is used to print the kernal release
+
+3.uname -v :- it is used to print the kernal version
+
+4.uname -m :- it is used to print the machine name 
+
+5.uname -s :- To know about os 
+
+6.uname -a :- to print all the information 
+
+
+User Management :
+-------------------------------
+By using this we are managing our users 
+
+sceario :- we are having only one system testeng  have stored some important data 
+
+the same system is used by developers 
+
+
+In three ways we can manage the users :
+------------------------------------------------
+1.GUI :- Graphical user interface
+
+2.command line
+
+3.By modifying the users-file
+
+/etc/passwd 
+
+1.root :- The root user is the super user and have all the permissions 
+
+2.useradd :- it is used to create the users 
+
+synatx :- useradd <user-name>
+
+--------------
+NOTE :-
+--------------
+when we create the users our os will create one directory with the name of user inside the home directory.
+
+2.To check whether user is created or not :-
+-----------------------------------------------
+
+cat /etc/passwd
+
+nano /etc/passwd
+
+
+3.passwd :- It is used to set the password for the user 
+
+syntax :- passwd <user-name>
+
+4.to get the Encrypted password 
+
+syntax :- openssl passwd <user-name>
+
+5.To get the password information
+
+syntax :- chage -l username
+
+6.To delete the user:- userdel -r <user-name>
+
+
+Linux Groups :
+------------------
+in our organisations we will be having groups/teams
+
+Dev -team
+test -team
+Hr -team
+Bussiness development --team
+
+1.groupadd :- Create the groups
+
+syntax :- groupadd <group-name>
+
+2.Group file  :- in this file all the information regarding groups will be present
+
+cat /etc/group
+
+3.usermod :- it is used to add the user to groups
+
+syntax :- usermod -a -G <group-name> <user-name>
+
+4.groupmod :- To change the group name
+
+synatx :- groupmod -n <new-group> <old-group>
+
+5.Remove the user from group :-
+
+syntax :- gpasswd -d <user-name> <group-name>
+
+6.groupdel :- To delete the groups 
+
+syntax :- groupdel <group-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

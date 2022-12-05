@@ -1,0 +1,116 @@
+1.Disk utility
+2.Input & output redirection
+3.Error redirection
+4.filter commands
+
+1.find,head,tail,grep,sed,sleep,uniq,sort,pipeline,tr
+
+Agenda :- 25-11-22
+----------------
+1.Awk command
+2.cron jobs
+3.Shell scripting introduction
+
+1.awk :-
+------------------------
+features :-
+--------------------
+1.it scans a file line by line
+2.it splits a file into multiple fields
+3.it formates the output lines
+4.It will acts like a searching a specific data from the file..
+
+synatx :- awk '/option/ {print}' <file-name>
+
+2.to print the specified column
+
+syntax :- awk '{print $n}' <file-name>
+
+
+Crontab :
+----------------
+It is type of job which is used to shedule the tasks
+
+developer and test eng 
+
+Developer is working in client area (usa) :- 
+
+test eng is working in india (india) :- 
+
+Developer will inform to test eng stating that he is going deploy the build into beta server(pre-production server)
+
+-> By using cron job our test eng will shedule the jobs based on the requirement 
+how will we will be using automation 
+
+to shedule the jobs based on the timings we use cron jobs..
+
+* :- miniutes (o-59)
+* :- hour (0-23)
+* :- day of the month (1-31)
+* :- month of the year (1-12)
+* :- day of the week (0-7). sunday 
+
+step 1 :- create one shell script 
+
+cron.sh
+----------------
+#!/bin/bash 
+
+date >> /home/ec2-user/wddo2.txt
+
+step 2 :- open the crontab -e for shedule the jobs 
+
+* * * * * /home/ec2-user/cron.sh
+
+step 3 :- chmod 777 cron.sh
+
+step 4 :- to verify 
+
+tail -f wddo2.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Assignment :
+-----------------
+1.prepare a ppt on linux with hands on & examples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
