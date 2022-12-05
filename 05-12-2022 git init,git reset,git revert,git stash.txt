@@ -95,8 +95,11 @@ we are having a drawback in git reset
 
 In git reset we need to remove the number of commits , it will not support to delete the specific commit 
 
+to overcome the drawbacks of git reset we are having git revert 
 
-
+3) git revert :-
+---------------------
+It is a command which is used to delete the nth commit as well as we can have a record of deleted commits 
 
 
 
